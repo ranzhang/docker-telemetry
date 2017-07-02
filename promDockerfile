@@ -1,0 +1,14 @@
+FROM prom/prometheus:latest
+MAINTAINER Randy Zhang ranzhang@cisco.com
+
+COPY ./prometheus.yml /etc/prometheus/prometheus.yml
+
+EXPOSE 9090
+
+ENTRYPOINT [ "/bin/prometheus" ]
+CMD        [ "-config.file=/etc/prometheus/prometheus.yml", \
+             "-storage.local.path=/prometheus", \
+             "-web.console.libraries=/etc/prometheus/console_libraries", \
+             "-web.console.templates=/etc/prometheus/consoles", \
+             "-web.listen-address=:9090"]
+             

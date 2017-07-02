@@ -1,0 +1,37 @@
+version: '2'
+services:
+  pipeline:
+    build: .
+    image: pipeline:latest
+    restart: always
+    ports:
+     - 8989:8989
+     - 5432:5432
+    networks: 
+	  cisco-tele:
+  pushgw:
+    image: prom/pushgateway:v0.3.1
+    restart: always
+    ports:
+     - 9091:9091
+    networks: 
+	  cisco-tele:
+  prom:
+    image: prom/prometheus:latest
+    build:
+     context: .
+     dockerfile: promDockerfile
+    restart: always
+    ports:
+     - 9090:9090
+    networks: 
+	  cisco-tele:
+  graf:
+    image: grafana/grafana:latest
+    restart: always
+    ports:
+     - 3000:3000
+    networks: 
+	  cisco-tele:
+networks:
+  cisco-tele:

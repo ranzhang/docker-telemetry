@@ -1,0 +1,551 @@
+[
+    {
+        "basepath": "Cisco-IOS-XR-controller-optics-oper:optics-oper/optics-ports/optics-port/optics-info",
+        "spec": {
+            "fields": [
+				{"name": "rx-low-threshold"},
+				{"name": "rx-high-threshold"},
+				{"name": "lbc-high-threshold"},
+				{"name": "tx-low-threshold"},
+				{"name": "tx-high-threshold"},
+				{"name": "temp-low-threshold"},
+				{"name": "temp-high-threshold"},
+				{"name": "volt-low-threshold"},
+				{"name": "volt-high-threshold"},
+				{"name": "cd"},
+				{"name": "cd-min"},
+				{"name": "cd-max"},
+				{"name": "cd-low-threshold"},
+				{"name": "cd-high-threshold"},
+				{"name": "pm-enable"},
+                {
+                    "fields": [
+				{"name": "lane-index"},
+				{"name": "laser-bias-current-percent"},
+				{"name": "transmit-power"},
+				{"name": "receive-power"},
+				{"name": "output-frequency"}
+                    ],
+                    "name": "lane-data"
+                },
+                {
+                    "fields": [
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "high-rx-power"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "low-rx-power"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "high-tx-power"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "low-tx-power"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "high-lbc"
+                        },
+				{"name": "high-rx1-power"},
+				{"name": "high-rx2-power"},
+				{"name": "high-rx3-power"},
+				{"name": "high-rx4-power"},
+				{"name": "low-rx1-power"},
+				{"name": "low-rx2-power"},
+				{"name": "low-rx3-power"},
+				{"name": "low-rx4-power"},
+				{"name": "high-tx1-power"},
+				{"name": "high-tx2-power"},
+				{"name": "high-tx3-power"},
+				{"name": "high-tx4-power"},
+				{"name": "low-tx1-power"},
+				{"name": "low-tx2-power"},
+				{"name": "low-tx3-power"},
+				{"name": "low-tx4-power"},
+				{"name": "high-tx1lbc"},
+				{"name": "high-tx2lbc"},
+				{"name": "high-tx3lbc"},
+				{"name": "high-tx4lbc"},
+				{"name": "low-tx1lbc"},
+				{"name": "low-tx2lbc"},
+				{"name": "low-tx3lbc"},
+				{"name": "low-tx4lbc"},
+				{"name": "rx-los"},
+				{"name": "tx-los"},
+				{"name": "rx-lol"},
+				{"name": "tx-lol"},
+				{"name": "tx-fault"},
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "hidgd"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "oorcd"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "osnr"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "wvlool"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "mea"
+                        },
+                        {
+                            "fields": [
+				{"name": "counter"}
+                            ],
+                            "name": "imp-removal"
+                        },
+				{"name": "rx-loc"},
+				{"name": "amp-gain-deg-low"},
+				{"name": "amp-gain-deg-high"}
+                    ],
+                    "name": "optics-alarm-info"
+                },
+				{"name": "rx-power"},
+				{"name": "tx-power"},
+				{"name": "cfg-tx-power"},
+                {
+                    "fields": [
+				{"name": "internal-temperature"}
+                    ],
+                    "name": "transceiver-info"
+                },
+				{"name": "total-rx-power"},
+				{"name": "total-tx-power"},
+				{"name": "transceiver-info"},
+                {
+                    "fields": [
+				{"name": "internal-temperature"}
+                    ],
+                    "name": "transceiver-info"
+                }
+            ]
+        }
+    },
+    {
+        "basepath": "Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization",
+        "spec": {
+            "fields": [
+				{"name": "total-cpu-one-minute"},
+				{"name": "total-cpu-five-minute"},
+				{"name": "total-cpu-fifteen-minute"},
+                {
+                    "fields": [
+				{"name": "process-id"},
+				{"name": "process-cpu-one-minute"},
+				{"name": "process-cpu-five-minute"},
+				{"name": "process-cpu-fifteen-minute"}
+                    ],
+                    "name": "process-cpu"
+                }
+            ]
+        }
+    },
+    {
+        "basepath": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "spec": {
+            "fields": [
+				{"name": "packets-received"},
+				{"name": "bytes-received"},
+				{"name": "packets-sent"},
+				{"name": "bytes-sent"},
+				{"name": "multicast-packets-received"},
+				{"name": "broadcast-packets-received"},
+				{"name": "multicast-packets-sent"},
+				{"name": "broadcast-packets-sent"},
+				{"name": "output-drops"},
+				{"name": "output-queue-drops"},
+				{"name": "input-drops"},
+				{"name": "input-queue-drops"},
+				{"name": "runt-packets-received"},
+				{"name": "giant-packets-received"},
+				{"name": "throttled-packets-received"},
+				{"name": "parity-packets-received"},
+				{"name": "unknown-protocol-packets-received"},
+				{"name": "input-errors"},
+				{"name": "crc-errors"},
+				{"name": "input-overruns"},
+				{"name": "framing-errors-received"},
+				{"name": "input-ignored-packets"},
+				{"name": "input-aborts"},
+				{"name": "output-errors"},
+				{"name": "output-underruns"},
+				{"name": "output-buffer-failures"},
+				{"name": "output-buffers-swapped-out"},
+				{"name": "applique"},
+				{"name": "resets"},
+				{"name": "carrier-transitions"},
+				{"name": "availability-flag"},
+				{"name": "last-data-time"},
+				{"name": "seconds-since-last-clear-counters"},
+				{"name": "last-discontinuity-time"},
+				{"name": "seconds-since-packet-received"},
+				{"name": "seconds-since-packet-sent"}
+            ]
+        }
+    },
+    {
+        "basepath": "Cisco-IOS-XR-pmengine-oper:performance-management/ethernet/ethernet-ports/ethernet-port/ethernet-current/minute15/minute15-ethers/minute15-ether",
+        "spec": {
+            "fields": [
+				{"name": "slot-number"},
+				{"name": "index"},
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "rx-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "stat-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "octet-stat"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "oversize-pkt-stat"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "fcs-errors-stat"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "long-frames-stat"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "jabber-stat"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether64-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether65127-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether128255-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether256511-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether5121023-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether10241518-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-ucast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-mcast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-bcast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "out-ucast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "out-bcast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "out-mcast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "if-in-errors"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "if-in-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether-stat-multicast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether-stat-broadcast-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "ether-stat-undersized-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "out-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-good-bytes"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-good-pkts"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-drop-other"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-error-fragments"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkt64-octet"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkts65-to127-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkts128-to255-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkts256-to511-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkts512-to1023-octets"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "in-pkts1024-to1518-octets"
+                },
+				{"name": "rx-util"},
+				{"name": "tx-util"},
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-undersized-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-oversized-pkt"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-fragments"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-jabber"
+                },
+                {
+                    "fields": [
+				{"name": "data"},
+				{"name": "threshold"}
+                    ],
+                    "name": "tx-bad-fcs"
+                }
+            ]
+        }
+    },
+    {
+        "basepath": "Cisco-IOS-XR-alarmgr-server-oper:alarms/brief/brief-system/active",
+        "spec": {
+            "fields": [
+                {
+                    "fields": [
+				{"name": "set-timestamp"},
+				{"name": "clear-timestamp"}
+                    ],
+                    "name": "alarm-info"
+                },
+                {
+                    "fields": [
+				{"name": "set-timestamp"},
+				{"name": "clear-timestamp"}
+                    ],
+                    "name": "alarm-info"
+                }
+            ]
+        }
+    },
+    {
+        "basepath": "Cisco-IOS-XR-procmem-oper:processes-memory/nodes/node/process-ids/process-id",
+        "spec": {
+            "fields": [
+				{"name": "process-id"},
+				{"name": "jid"},
+				{"name": "pid"},
+				{"name": "text-seg-size"},
+				{"name": "data-seg-size"},
+				{"name": "stack-seg-size"},
+				{"name": "malloc-size"}
+            ]
+        }
+    }
+]
+
