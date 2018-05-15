@@ -7,14 +7,14 @@ services:
     ports:
      - 8989:8989
      - 5432:5432
-    networks: 
+    networks:
       cisco-tele:
   pushgw:
     image: prom/pushgateway:v0.3.1
     restart: always
     ports:
      - 9091:9091
-    networks: 
+    networks:
       cisco-tele:
   prom:
     image: prom/prometheus:v1.7.1
@@ -24,14 +24,14 @@ services:
     restart: always
     ports:
      - 9090:9090
-    networks: 
+    networks:
       cisco-tele:
   graf:
     image: grafana/grafana:3.1.1
     restart: always
     ports:
      - 3000:3000
-    networks: 
+    networks:
       cisco-tele:
 networks:
   cisco-tele:
