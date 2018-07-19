@@ -5,7 +5,7 @@ WORKDIR $p
 
 RUN apt-get update && apt-get -y install iputils-ping && apt-get -y install curl
 
-CCOPY ./pipeline ./pipeline.conf ./metrics.json ./dump.bin ./
+COPY ./pipeline ./pipeline.conf ./metrics.json ./dump.bin ./
 
 ENTRYPOINT ["/pipeline/pipeline"]
 CMD ["-config=/pipeline/pipeline.conf"]
