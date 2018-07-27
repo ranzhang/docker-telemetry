@@ -4,7 +4,8 @@ global:
 scrape_configs:
   - job_name: 'pipeline'
     static_configs:
-      - targets: ['192.168.99.100:8989']
+      - targets: ['DOCKER_HOST_IP:8989']
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['192.168.99.100:9091', '192.168.99.100:9090']
+      - targets: ['DOCKER_HOST_IP:9091', 'DOCKER_HOST_IP:9090']
+
