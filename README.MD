@@ -10,7 +10,6 @@ This is a dockerized app for Cisco telemetry. It consists of four containers, or
 ## Basic Operations
 1. Ensure you have docker installed and running
 2. Download this git repo and change to this directory
-3. Get your host IP address and replace all instances of IP address in the prometheus.yml file
-4. Build images and start the all containers: docker-compose up -d --build
-5. Login to grafana, add data source
-6. Uploads two sample dashboards. The traffic dashboard may not show anything as the data may be out of date by the time you use it. If that is the case, you will need your own data.
+3. Build images and start the all containers: docker-compose up -d --build
+4. Login to grafana, add data source
+5. Uploads two sample dashboards. The traffic dashboard may not show anything as the data may be out of date by the time you use it. If that is the case, you will need your own data.
